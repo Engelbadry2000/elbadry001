@@ -1,0 +1,151 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(242, 242, 242);
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: rgb(0, 68, 102);
+    color: rgb(255, 255, 255);
+    padding: 30px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    font-weight: bold;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+header a {
+    color: rgb(221, 221, 221);
+    text-decoration: none;
+}
+
+header a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* Main Content */
+main {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: rgb(0, 68, 102);
+    border-bottom: 2px solid rgb(0, 68, 102);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.4em;
+    color: rgb(51, 51, 51);
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+ul li strong {
+    color: rgb(0, 68, 102);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(0, 68, 102);
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+footer a {
+    color: rgb(221, 221, 221);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* Ensure scroll functionality */
+html, body {
+    height: 100%;
+}
+
+/* Make sure the footer doesn't overlap the content */
+main {
+    min-height: calc(100vh - 150px);
+}
+
+/* Login Page Styling */
+.login-container {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 8px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 15px;
+    color: rgb(0, 68, 102);
+}
+
+.login-container input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(143, 134, 134);
+    border-radius: 4px;
+}
+
+.login-container button {
+    width: 75%;
+    padding: 10px;
+    background-color: rgb(4, 65, 95);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: rgb(0, 51, 85);
+}
+
+/* CV Page Styling */
+main {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

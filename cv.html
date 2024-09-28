@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Elbadry CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Section -->
+    <div id="login-container" class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit">Login</button>
+            <p id="error-message" style="color: red; display: none;">Incorrect password, please try again.</p>
+        </form>
+    </div>
+
+    <!-- CV Section (Hidden by Default) -->
+    <div id="cv-container" style="display: none;">
+        <header>
+            <h1>Mohamed Ahmed Hassan</h1>
+            <p>Renewable Energy Engineer</p>
+            <p>Qalyub, Egypt | <a href="mailto:mohamedelbadry232@gmail.com">mohamedelbadry232@gmail.com</a> | Phone: +201020333134</p>
+            <p><a href="https://www.linkedin.com/in/mohamed-elbadry-607741297">LinkedIn Profile</a></p>
+        </header>
+
+        <main>
+            <section id="objective">
+                <h2>Objective</h2>
+                <p>Highly skilled Renewable Energy Engineer with extensive experience in solar and power station design, fault analysis, and maintenance...</p>
+            </section>
+
+            <section id="experience">
+                <h2>Professional Experience</h2>
+                <h3>PLC and Electrical Systems</h3>
+                <ul>
+                    <li><strong>PLC Programming and Implementation:</strong> Trained in programming and configuring Programmable Logic Controllers (PLCs) for industrial automation.</li>
+                    <li><strong>Electrical Panel Assembly and Installation:</strong> Assembled and installed electrical control panels for various industrial applications.</li>
+                    <li><strong>Solar Power System Installation:</strong> Assisted in the installation of a 15 kW solar power system at Qalyoub Distribution Station.</li>
+                    <li><strong>Elevator Maintenance and Inverter Repair:</strong> Performed regular maintenance on elevators and repaired inverters used in automatic elevators.</li>
+                </ul>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li><strong>Tracker System:</strong> Designed and developed a GPS-based tracker system using Arduino...</li>
+                    <li><strong>Smart Elevator System:</strong> Developed a smart elevator control system using Arduino...</li>
+                    <li><strong>Signal Amplifier:</strong> Engineered an electronic signal amplifier for better transmission using operational amplifiers.</li>
+                    <li><strong>Smart Solar Panel Cleaner:</strong> Created an automated cleaning system for solar panels...</li>
+                </ul>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>New Cairo Technological University:</strong> Bachelor's in New and Renewable Energy (Currently in the third year)</li>
+                    <li><strong>Benha Industrial Technical Institute:</strong> Associate Degree in Electrical Power Networks (Graduated 2022)</li>
+                </ul>
+            </section>
+
+            <section id="skills">
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li>MATLAB Simulink, PV SYST, PV SOL, AutoCAD, Solidworks, SketchUp</li>
+                    <li>Programming Languages: Ladder Logic, Structured Text</li>
+                    <li>Solar Power Systems: Installation, wiring, grid connection, performance testing</li>
+                    <li>Electrical Engineering: Circuit design, panel assembly, wiring, testing</li>
+                </ul>
+            </section>
+
+            <section id="courses">
+                <h2>Courses</h2>
+                <ul>
+                    <li><strong>Solar Power Plant Installation and Maintenance:</strong> Installation of solar panels and inverters for on-grid and off-grid systems.</li>
+                    <li><strong>Solar Water Pumping Systems:</strong> Design and maintenance of solar-powered water pumping systems for agriculture...</li>
+                    <li><strong>Electrical Power Generation at South Cairo Power Station:</strong> Detailed study of power generation stages and maintenance of turbines...</li>
+                    <li><strong>Networking and Administration (CCNA):</strong> Networking fundamentals, configuring Cisco routers, network security...</li>
+                    <li><strong>Siemens PLC Training:</strong> Programming and configuring Siemens PLCs using TIA Portal for industrial automation systems.</li>
+                    <li><strong>Power Transmission and Transformer Maintenance:</strong> Maintenance and repair of electrical transformers and power transmission systems.</li>
+                </ul>
+            </section>
+
+            <section id="languages">
+                <h2>Languages</h2>
+                <ul>
+                    <li>Arabic: Native</li>
+                    <li>English: A2</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>For more information or inquiries, contact via email: <a href="mailto:mohamedelbadry232@gmail.com">mohamedelbadry232@gmail.com</a></p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            var password = document.getElementById('password').value;
+
+            if (password === '01020333134') {
+                document.getElementById('login-container').style.display = 'none'; // Hide login form
+                document.getElementById('cv-container').style.display = 'block';  // Show CV
+            } else {
+                document.getElementById('error-message').style.display = 'block';  // Show error message
+            }
+        });
+    </script>
+</body>
+</html>
